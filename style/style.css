@@ -1,15 +1,27 @@
-header{
-    height: 90px;
-    background-color: rgb(46 58 70);
+header {
+  height: 90px;
+  background-color: rgb(46 58 70);
 }
 
-main{
-    background-color: #1e2d3b;
-    height: calc(100vh - 90px);
-    overflow: hidden;
+main {
+  background-color: #1e2d3b;
+  height: calc(100vh - 90px);
+  overflow: hidden;
 }
 
-.card{
-    background-color: rgb(46 58 70) ;
-    color: lightgray;
+.card {
+  background-color: #2f3a46;
+  height: 350px;
+  width: 200px;
+}
+
+img {
+  width: 70%;
+}
+.card-title {
+  color: white;
+  text-transform: uppercase;
+}
+.card-text {
+  color: rgb(122 127 128);
 }

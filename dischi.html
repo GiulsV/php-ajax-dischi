@@ -18,24 +18,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style/style.css" />
-    <title>Dischi</title>
+    <title>Dischi HTML</title>
   </head>
   <body>
     <div id="app">
       <header></header>
       <main>
         <div class="container">
-          <div
-            class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-flex justify-content-around">
-            <div class="col" v-for="(disc, index) in discs" :key="index">
-              <div class="card align-items-center h-100" >
-                <img :src="disc.poster" :alt="disc.title" class="card-img-top"  />
+          <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-flex justify-content-around">
+            <div class="col mt-4" v-for="(disc, index) in discs" :key="index" >
+              <div class="card align-items-center">
+                <img :src="disc.poster" :alt="disc.title" class="card-img-top" />
                 <div class="card-body">
-                  <h3 class="card-title text-center mt-3">{{disc.title}}</h3>
-                  <div class="card-title text-center mt-3" >{{disc.author}}</div>
-                  <div class="card-title text-center mt-3">{{disc.year}}</div>
+                  <h5 class="card-title text-center">
+                    {{ disc.title }}
+                  </h5>
+                  <div class="pb-5 d-flex flex-column .justify-content-start text-center">
+                    <span class="card-text">
+                      {{ disc.author }}
+                    </span>
+                    <span class="card-text">
+                      {{ disc.year }}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
