@@ -1,0 +1,15 @@
+header{
+    height: 90px;
+    background-color: rgb(46 58 70);
+}
+
+main{
+    background-color: #1e2d3b;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+}
+
+.card{
+    background-color: rgb(46 58 70) ;
+    color: lightgray;
+}
